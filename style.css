@@ -486,6 +486,10 @@ span {
         background-color: #ffff;
     }
 
+
+
+
+
     .nav-links {
         display: none !important;
         position: absolute;
@@ -501,6 +505,7 @@ span {
 
 
     }
+
 
     .nav-links.active {
         display: flex !important;
@@ -683,280 +688,132 @@ button:hover,
     }
 }
 
-
-@media (max-width: 412px) {
-
-    /* Base layout adjustments */
-    body {
-        font-size: 14px;
-        overflow-x: hidden;
-        /* Prevent horizontal scrolling */
+@media (max-width: 420px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 20px;
     }
 
-    .header,
-    .navbar,
-    .main,
-    .test-box,
-    .contact,
-    .sevice-box,
-    .cards-projecr-data {
-        margin: 0;
-        padding: 0 16px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Make all images fluid */
-    img,
-    .imageone,
-    .imgg {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Adjust hero text size */
-    .ui {
-        font-size: 8vw;
-        line-height: 1.2;
-    }
-
-    /* Text containers full width */
-    .lorem,
-    .group,
-    .ranger,
-    .skill-section {
-        width: 100%;
-    }
-
-    /* Responsive skill slider */
-    .skill-section {
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px 0;
-    }
-
-    /* Button fit width */
-    button,
-    .butten,
-    .contactme-button,
-    #download-cv,
-    #button-hireMe {
-        width: 100%;
-        max-width: 100%;
-        padding: 12px;
-    }
-
-    /* Navbar toggling */
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links {
+    .navbar-right-side {
         display: none;
         flex-direction: column;
-        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1em 20px;
+        z-index: 100;
     }
 
-    .nav-links.active {
+    .navbar-right-side.active {
         display: flex;
     }
 
-    /* Services and project cards stacking */
-    .sevice-box,
-    .abdullah {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .cards-projecr-data {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-    /* Testimonials box width */
-    .test-box {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 16px 0;
-    }
-
-
-    .contaact {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .type {
-        width: 100%;
-    }
-
-    /* Footer icons */
-    .footer-cextion,
-    .socila-icons {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding: 10px 20px;
-    }
-
-    .navbar-right-side {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .type {
-        width: 100% !important;
-        padding: 10px;
-        font-size: 14px;
-        box-sizing: border-box;
-    }
-
-    .contaact {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-    }
-
     .menu-icon {
         display: block;
     }
 
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4vw;
+        padding: 0 16px;
+    }
+
+    .imageone {
+        width: 80%;
+        margin-top: 20px;
+    }
+
     .ui {
-        font-size: 8vw;
+        font-size: 10vw;
+        width: 100%;
+        text-align: center;
     }
 
     .lorem {
         width: 100%;
+        text-align: center;
         font-size: 14px;
     }
 
-    .imageone,
-    .imgg {
-        width: 100%;
-        height: auto;
+    .skill-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .group {
+        width: 80%;
+        display: block;
+    }
+
+    .ranger {
+        width: 90%;
+    }
+
+    .sevice-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sevice-box-one {
+        width: 90%;
+    }
+
+    .abdullah {
+        flex-direction: column;
+        align-items: center;
     }
 
     .cards-projecr-data {
-        width: 100%;
-        margin-bottom: 16px;
-    }
-
-    .skill-section,
-    .group,
-    .ranger {
-        width: 100%;
-        flex-direction: column;
-        gap: 12px;
-        padding: 12px 0;
-    }
-
-    button,
-    .butten,
-    .contactme-button,
-    #download-cv,
-    #button-hireMe {
-        width: 100%;
-        max-width: 100%;
-        padding: 12px;
-    }
-
-    .sevice-box,
-    .abdullah,
-    .Ellipse,
-    .contaact,
-    .footer-cextion,
-    .socila-icons {
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
+        width: 90%;
     }
 
     .test-box {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         align-items: center;
-        padding: 16px 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .testimonial {
-        flex: 1 1 100%;
         padding: 15px;
     }
 
-
-    .testimonial img {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-[class*="card"],
-[class*="cards"],
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-[class*="card"]:hover,
-[class*="cards"]:hover,
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Generic button elements */
-button,
-[type="button"],
-.butten {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-button:hover,
-[type="button"]:hover,
-.butten:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(253, 111, 0, 0.4);
-}
-
-@media (max-width: 480px) {
-    .ui {
-        font-size: 8vw;
-    }
-
-    .navbar-right-side {
+    .Ellipse {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .contaact {
+        flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 
     .type {
-        width: 90vw;
+        width: 90%;
     }
 
-    .lorem {
-        font-size: 14px;
+    .footer-cextion,
+    .socila-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
-/* Specific adjustments for 420px breakpoint */
+
+
+
 @media (max-width: 420px) {
     .navbar {
         flex-direction: row;
@@ -1098,5 +955,26 @@ button:hover,
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+}
+
+@media (max-width: 430px) {
+    .navbar-right-side {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-right-side.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
     }
 }
